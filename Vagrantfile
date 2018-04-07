@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "dns_client" do |dns_client_config|
     dns_client_config.vm.box = "bento/centos-7.4"
-    dns_client_config.vm.hostname = "dns_client.codingbee.net"
+    dns_client_config.vm.hostname = "dns-client.codingbee.net"
     dns_client_config.vm.network "private_network", ip: "192.170.10.101", :netmask => "255.255.255.0", virtualbox__intnet: "intnet1"
 
     dns_client_config.vm.provider "virtualbox" do |vb|
